@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <img src="favicon.ico" alt="Favicon" class="favicon">
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks" class="nav-links">
+      <ul> <!-- Add an unordered list to wrap the links -->
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="evolution.html"><i class="fa-solid fa-earth-americas"></i> Evolution</a></li>
+        <li><a href="popculture.html"><i class="fa-solid fa-star"></i> Pop Culture</a></li>
+      </ul>
+    </div>
+    <!-- Hamburger menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>   
+
+  <div class="container">
+    <!-- Carousel Section -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+      <p>
+        Welcome to your go-to spot for all things TV! From drama and comedy to animation and international hits, we bring you the latest shows. Find your next favorite show here and stay up to date on everything happening in the world of television.
+      </p>
+    </div>
+  </div>
+
+  <!--  JavaScript  -->
+  <script src="scripts.js"></script>
+
+  <script>
+    // Toggle the navigation menu
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Cindy Pham</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

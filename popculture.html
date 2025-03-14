@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <img src="favicon.ico" alt="Favicon" class="favicon">
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks" class="nav-links">
+      <ul> <!-- Add an unordered list to wrap the links -->
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="evolution.html"><i class="fa-solid fa-earth-americas"></i> Evolution</a></li>
+        <li><a href="popculture.html"><i class="fa-solid fa-star"></i> Pop Culture</a></li>
+      </ul>
+    </div>
+    <!-- Hamburger menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>   
+
+  <div class="content">
+    <h1>Popular shows in Pop Culture</h1>
+    
+    <!-- Cards Section -->
+    <div class="cards-container">
+        
+        <div class="card">
+            <img src="cardp1.jpg" alt="">
+            <h3>Pretty Little Liars</h3>
+            <p>Pretty Little Liars was a very popular TV show, especially on social media. It was the most-watched series on ABC Family and was a huge hit on social media. 
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="cardp2.jpg" alt="">
+            <h3>Blue Lock</h3>
+            <p>Blue Lock has gained significant popularity, with the manga surpassing 40 million copies sold and the anime airing from October 2022 to March 2023.</p>
+        </div>
+
+        <div class="card">
+            <img src="cardp3.jpg" alt="">
+            <h3>Young Sheldon</h3>
+            <p>The show's popularity is demonstrated by its high viewership numbers on CBS, Netflix, and other streaming services. It has had a big impact on pop culture, with some saying that it has turned old shows into big pop culture moments. </p>
+        </div>
+
+        <div class="card">
+            <img src="cardp4.jpg" alt="">
+            <h3>Fresh Off the Boat</h3>
+            <p>The show has gained significant popularity, particularly for its portrayal of Asian American culture and family dynamics, becoming a game-changer for representation on television.</p>
+        </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+        <h2>Request to Add a Show to this Page</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<!--  JavaScript  -->
+<script src="scripts.js"></script>
+
+<script>
+  // Toggle the navigation menu
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Cindy Pham</p>
+    </div>
+  </footer>
+
+</body>
+</html>
